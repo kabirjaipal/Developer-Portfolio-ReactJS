@@ -1,0 +1,60 @@
+.skills {
+  margin-top: 20px;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 30px;
+  margin-top: 10px;
+  padding-bottom: 20px;
+}
+
+.skill {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid var(--head_color);
+  border-radius: 30px;
+  width: 200px;
+  height: 200px;
+  transition: var(--transition);
+}
+
+.skill:hover {
+  border: 3px solid var(--head_color);
+}
+
+.skill i {
+  font-size: 100px;
+  padding-bottom: 10px;
+  transition: var(--transition);
+}
+
+.skill i:hover {
+  color: var(--head_color);
+}
+
+.skill h5 {
+  padding: 10px;
+  border-radius: 10px;
+  transition: var(--transition);
+  font-size: 20px;
+  /* font-weight: bold; */
+}
+
+.skill h5:hover {
+  background-color: var(--head_color);
+  color: var(--bg_color);
+}
+
+/* phone */
+@media only screen and (max-width: 600px) {
+  .skills {
+    /* display: flex;
+    flex-direction: column; */
+    grid-template-columns: auto;
+    padding-bottom: 50px;
+  }
+}
