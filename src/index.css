@@ -32,7 +32,7 @@ body {
   flex: 1;
 }
 
-.container h1{
+.container h1 {
   color: var(--head_color);
 }
 
@@ -40,8 +40,31 @@ a {
   text-decoration: none;
 }
 
-h1,h2,h3,h4,h5,h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Poppins", sans-serif;
+}
+
+.hover_line {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.hover_line::after {
+  content: "";
+  width: 0px;
+  height: 2px;
+  display: block;
+  background: var(--head_color);
+  transition: var(--transition);
+}
+
+.hover_line:hover::after {
+  width: 100%;
 }
 
 /* phone */
