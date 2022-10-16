@@ -4,7 +4,7 @@ import "../Styles/Navbar.css";
 const Navbar = ({ page, setPage }) => {
   return (
     <div className="navbar">
-      <a href="/" className="nav_title">
+      <a href="/" className="nav_title hover_line">
         Tech Boy
       </a>
       <div className="links">

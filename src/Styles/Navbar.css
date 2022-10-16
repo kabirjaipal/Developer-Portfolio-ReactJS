@@ -35,12 +35,8 @@
   color: var(--head_color);
   font-size: 18px;
   transition: var(--transition);
-  cursor: pointer;
 }
 
-.links li p:hover {
-  border-bottom: 1px solid var(--text_color);
-}
 
 /* phone */
 @media only screen and (max-width: 600px) {

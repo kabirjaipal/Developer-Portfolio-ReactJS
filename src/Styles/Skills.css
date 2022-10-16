@@ -23,7 +23,9 @@
 }
 
 .skill:hover {
-  border: 3px solid var(--head_color);
+  /* border: 3px solid var(--head_color); */
+  background-color: var(--bg_color);
+  color: var(--head_color);
 }
 
 .skill i {
@@ -41,19 +43,16 @@
   border-radius: 10px;
   transition: var(--transition);
   font-size: 20px;
-  /* font-weight: bold; */
 }
 
-.skill h5:hover {
+/* .skill h5:hover {
   background-color: var(--head_color);
   color: var(--bg_color);
-}
+} */
 
 /* phone */
 @media only screen and (max-width: 600px) {
   .skills {
-    /* display: flex;
-    flex-direction: column; */
     grid-template-columns: auto;
     padding-bottom: 50px;
   }
